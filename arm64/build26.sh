@@ -103,6 +103,25 @@ PACKAGES="$PACKAGES kmod-fs-vfat"
 PACKAGES="$PACKAGES kmod-tg3"
 PACKAGES="$PACKAGES -libustream-mbedtls"
 
+# ===================== 添加 iptables 支持 =====================
+# iptables 用户空间工具
+PACKAGES="$PACKAGES iptables"
+PACKAGES="$PACKAGES iptables-mod-conntrack"
+PACKAGES="$PACKAGES iptables-mod-nat"
+PACKAGES="$PACKAGES iptables-mod-filter"
+PACKAGES="$PACKAGES iptables-mod-tproxy"
+PACKAGES="$PACKAGES iptables-mod-ipopt"
+PACKAGES="$PACKAGES iptables-mod-conntrack-extra"
+
+# iptables 内核模块
+PACKAGES="$PACKAGES kmod-ipt-core"
+PACKAGES="$PACKAGES kmod-ipt-nat"
+PACKAGES="$PACKAGES kmod-ipt-conntrack"
+PACKAGES="$PACKAGES kmod-ipt-extra"
+PACKAGES="$PACKAGES kmod-ipt-conntrack-extra"
+PACKAGES="$PACKAGES kmod-ipt-nat-extra"
+
+
 # LuCI 中文本地化与插件
 #PACKAGES="$PACKAGES luci-i18n-linkease-zh-cn"
 #PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
