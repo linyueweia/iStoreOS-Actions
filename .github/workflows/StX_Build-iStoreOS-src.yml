@@ -6,10 +6,10 @@ on:
       openwrt_board:
         description: "请选择设备型号"
         required: true
-        default: "station-m2_tvi3315a_jp-tvbox_wxy-oect"
+        default: "station-m2_tvi3315a_jp-tvbox_wxy-oect_fine3399"
         type: choice
         options:
-          - station-m2_tvi3315a_jp-tvbox_wxy-oect
+          - station-m2_tvi3315a_jp-tvbox_wxy-oect_fine3399
           - a311d
           - a311d-oes
           - alark35-3500
